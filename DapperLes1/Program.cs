@@ -5,7 +5,7 @@ using MySqlConnector;
 
 Console.WriteLine("Hello, World!");
 
-string conectionString = "server=localhost;uid=root;pwd=Test@1234!;database=Todo";
+string conectionString = "server=localhost;uid=root;pwd=Test123%;database=Todo";
 MySqlConnection connection = new MySqlConnection(conectionString);
 
 List<Todo> todos = connection.Query<Todo>("SELECT * FROM Todo").ToList();
